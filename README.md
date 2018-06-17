@@ -10,7 +10,7 @@ Supported operating systems are some of most used Linux distros (if cant find ic
 
 ![distroprompt](/screenshots/distroprompt.png)
 
-Some other distros:
+Some other distros and MacOS:
 
 ![distroprompt distros](/screenshots/distroprompt-distros.png)
 
