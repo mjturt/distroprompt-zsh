@@ -24,58 +24,58 @@ distroprompt_os_symbol() {
          # OS test
          case $(uname) in
          "Linux")
-            if [ $(cat /etc/*-release | grep Gentoo | wc -l) -gt "0" ]
+            if [ $(grep "Gentoo" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{212}"
-            elif [ $(cat /etc/*-release | grep Arch | wc -l) -gt "0" ]
+            elif [ $(grep "Arch" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{033}"
-            elif [ $(cat /etc/*-release | grep Debian | wc -l) -gt "0" ]
+            elif [ $(grep "Debian" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{052}"
-            elif [ $(cat /etc/*-release | grep Slackware | wc -l) -gt "0" ]
+            elif [ $(grep "Slackware" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{060}"
-            elif [ $(cat /etc/*-release | grep Ubuntu | wc -l) -gt "0" ]
+            elif [ $(grep "Ubuntu" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{166}"
-            elif [ $(cat /etc/*-release | grep Mint | wc -l) -gt "0" ]
+            elif [ $(grep "Mint" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{040}"
-            elif [ $(cat /etc/*-release | grep suse | wc -l) -gt "0" ]
+            elif [ $(grep "suse" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{002}"
-            elif [ $(cat /etc/*-release | grep RHEL | wc -l) -gt "0" ]
+            elif [ $(grep "RHEL" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{088}"
-            elif [ $(cat /etc/*-release | grep Fedora | wc -l) -gt "0" ]
+            elif [ $(grep "Fedora" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{027}"
-            elif [ $(cat /etc/*-release | grep CentOS | wc -l) -gt "0" ]
+            elif [ $(grep "CentOS" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{154}"
-            elif [ $(cat /etc/*-release | grep Elementary | wc -l) -gt "0" ]
+            elif [ $(grep "Elementary" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{253}"
-            elif [ $(cat /etc/*-release | grep NixOS | wc -l) -gt "0" ]
+            elif [ $(grep "NixOS" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{074}"
-            elif [ $(cat /etc/*-release | grep Manjaro | wc -l) -gt "0" ]
+            elif [ $(grep "Manjaro" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{040}"
-            elif [ $(cat /etc/*-release | grep Alpine | wc -l) -gt "0" ]
+            elif [ $(grep "Alpine" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{025}"
-            elif [ $(cat /etc/*-release | grep Devuan | wc -l) -gt "0" ]
+            elif [ $(grep "Devuan" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{059}"
-            elif [ $(cat /etc/*-release | grep Mageia | wc -l) -gt "0" ]
+            elif [ $(grep "Mageia" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{025}"
-            elif [ $(cat /etc/*-release | grep Sabayon | wc -l) -gt "0" ]
+            elif [ $(grep "Sabayon" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{252}"
-            elif [ $(cat /etc/*-release | grep Raspbian | wc -l) -gt "0" ]
+            elif [ $(grep "Raspbian" /etc/*-release | wc -l) -gt "0" ]
             then
                echo -n "%B%F{125}"
             else
